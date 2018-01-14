@@ -2,101 +2,139 @@
 <html>
 <head>
     <script src="https://use.fontawesome.com/2604870843.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Aloha Apparel Co.</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 <body>
-    <div class="container">
+    <div class="wrapper">
         <header>
             <img class="logo" src="images/aloha-logo.svg" alt="Aloha Apparel Co. logo">
-            <nav>
-                <ul>
-                    <li><h3>About</h3></li>
-                    <li><h3>Shop</h3></li>
-                    <li><h3>Featured</h3></li>
-                    <li><h3>Updates</h3></li>
-                </ul>
-            </nav>
             <img class="cart" src="images/cart-icon.svg" alt="Shopping Cart">
+            <nav>
+                    <ul>
+                        <li><h3>About</h3></li>
+                        <li><h3>Shop</h3></li>
+                        <li><h3>Featured</h3></li>
+                        <li><h3>Updates</h3></li>
+                    </ul>
+            </nav>
         </header>
     
         <section class="banner">
-            <div class="banner-header">
+            <div class="banner-text">
                 <h3 class="collection">New Collection</h3>
-                <h2 class="season">Spring/Summer 2017</h2>
+                <h2 class="season">Spring/Summer 2018</h2>
             </div>
         </section>
     
         <section class="about">
-            <h2>Hand-Crafted Styles</h2>
+            <h2>Hand-Crafted <span class="style">Styles</span></h2>
             <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. 
                 Browse our current selection of products or sign-up for updates below.</p>
         </section>
     
-        <section class="categories">
-
+        <section class="categories-of-products">
+            <div class="main-container">
+                <div class="products-for-men grid-cell">
+                    <img src="images/mens-category.jpg" alt="Image of the Men's Category">
+                    <div class="categories-text"><h2>Men's</h2></div>
+                </div>
+                <div class="trends grid-cell">
+                    <img src="images/trends-category.jpg" alt="Image of the Trends Category">
+                    <div class="categories-text"><h2>Trends</h2></div>
+                </div>
+                <div class="glasses grid-cell">
+                    <img src="images/glasses-category.jpg" alt="Image of the Glasses Category">
+                    <div class="categories-text"><h2>Glasses</h2></div>
+                </div>
+                <div class="sale grid-cell">
+                    <img src="images/sale-category.jpg" alt="Image of the Sale Category">
+                    <div class="categories-text"><h2>Sale</h2></div>
+                </div>
+                <div class="bags grid-cell">
+                    <img src="images/bags-category.jpg" alt="Image of the Bags Category">
+                    <div class="categories-text"><h2>Bags</h2></div>
+                </div>
+                <div class="products-for-women grid-cell">
+                    <img src="images/womens-category.jpg" alt="Image of the Women's Category">
+                    <div class="categories-text"><h2>Women's</h2></div>
+                </div>
+            </div>
         </section>
 
-        <section class="popular-products">
-            <h2>Most-Loved Products</h2>
-            <ul>
-                <li>
+        
+    <section class="popular-products">
+            <h2>Most-Loved <span class="style">Products</span></h2>
+            
+            <div class="carousel"  data-flickity='{ "groupCells": true }' data-flickity-options='{ "prevNextButtons": false }'>
+                <div class="carousel-cell">
                     <img src="images/stretch-knit-dress.jpg" alt="Image of a Stretch Knit Dress">
                     <p>Dresses</p>
                     <h3>Stretch Knit Dress</h3>
-                    <p>$169.00</p>
-                </li>
-                <li>
+                    <p>$169.00</p></a>
+                </div>
+                <div class="carousel-cell">
                     <img src="images/cotton-blue-shirt.jpg" alt="Image of a Cotton Blue Shirt">
                     <p>Shirts</p>
                     <h3>Cotton Blue Shirt</h3>
                     <p>$89.00</p>
-                </li>
-                <li>
+                </div>
+                <div class="carousel-cell">
                     <img src="images/checked-stretch-dress.jpg" alt="Image of a Checked Stretch Dress">
                     <p>Dresses</p>
                     <h3>Checked Stretch Dress</h3>
                     <p>$129.00</p>
-                </li>
-                <li>
+                </div>
+                <div class="carousel-cell">        
                     <img src="images/blue-hipster-backpack.jpg" alt="Image of a Blue Hipster Backpack">
                     <p>Bags</p>
                     <h3>Blue Hipster Backpack</h3>
                     <p>$69.00</p>
-                </li>
-                <li>
+                </div>
+                <div class="carousel-cell">
                     <img src="images/demin-overall-shorts.jpg" alt="Image of a Demin Overall Shorts">
                     <p>Demin</p>
                     <h3>Demin Overall Shorts</h3>
                     <p>$89.00</p>
-                </li>
-                <li>
+                </div>
+                <div class="carousel-cell">
                     <img src="images/pink-dotted-dress.jpg" alt="Image of a Pink Dotted Dress">
                     <p>Dresses</p>
                     <h3>Pink Dotted Dress</h3>
                     <p>$99.00</p>
-                </li>
-                <li>
+                </div>
+                <div class="carousel-cell">
                     <img src="images/cotton-yellow-tshirt.jpg" alt="Image of a Cotton Yellow Tshirt">
                     <p>Shirts</p>
                     <h3>Cotton Yellow Tshirt</h3>
                     <p>$39.00</p>
-                </li>
-                <li>
+                </div>
+                <div class="carousel-cell">
                     <img src="images/blue-silk-dress.jpg" alt="Image of a Blue Silk Dress">
                     <p>Dresses</p>
                     <h3>Blue Silk Dress</h3>
                     <p>$119.00</p>
-                </li>
-            </ul>
+                </div>       
+            </div>
+            
         </section>
     
         <section class="subscription">
-            <h2>Sign-up for Updates</h2>
-            <p>Stay updated on our latest product releases, be first to find out about 
-            upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
+            <div class="subscription-content">
+                <h2>Sign-up for <span class="style">Updates</span></h2>
+                <p>Stay updated on our latest product releases, be first to find out about 
+                upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
+                
+                <form class="sign-up">
+                    <input type="your_email" value placeholder="Your Email">
+                    <input type="submit" name="subscribe">
+                </form>
+            </div>
         </section>
     
         <footer>
@@ -112,19 +150,19 @@
             <div class="social">
                 <ul>
                     <li>
-                        <i class="fa fa-facebook" aria-hidden="true"></i><span>Facebook</span>
+                        <i class="fa fa-facebook fa-fw" aria-hidden="true"></i><span class="networks">Facebook</span>
                     </li>
                     <li>
-                        <i class="fa fa-twitter" aria-hidden="true"></i><span>Twitter</span>
+                        <i class="fa fa-twitter fa-fw" aria-hidden="true"></i><span class="networks">Twitter</span>
                     </li>
                     <li>
-                        <i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span>
+                        <i class="fa fa-instagram fa-fw" aria-hidden="true"></i><span class="networks">Instagram</span>
                     </li>
                     <li>
-                        <i class="fa fa-pinterest" aria-hidden="true"></i><span>Pinterest</span>
+                        <i class="fa fa-pinterest fa-fw" aria-hidden="true"></i><span class="networks">Pinterest</span>
                     </li>
                     <li>
-                        <i class="fa fa-google-plus" aria-hidden="true"></i><span>Google+</span>
+                        <i class="fa fa-google-plus fa-fw" aria-hidden="true"></i><span class="networks">Google+</span>
                     </li>
                 </ul>
             </div>
