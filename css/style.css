@@ -88,6 +88,9 @@ header {
     align-items: center;
     margin-top: 1rem;
     padding: .5rem;
+    /* position: fixed;
+    top: 0;
+    background-color: #fff; */
 }
 
 .logo { 
@@ -200,6 +203,7 @@ nav h3 {
 .grid-cell {
     position: relative;
     background-color: #242424;
+    line-height: 0;
 }
 .main-container img {
     width: 100%;
@@ -225,6 +229,7 @@ nav h3 {
     text-transform: uppercase;
     color: #fff;
     text-shadow: 1px 1px 2px #2b2a2a88;
+    line-height: 1;
 }
 
 .products-for-men {
@@ -371,7 +376,6 @@ form div{
     height: 100%;
     margin: 0;
     display: inline-block;
-    
     max-width: 115px; 
 }
 
