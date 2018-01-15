@@ -259,7 +259,6 @@ nav h3 {
 
 /*  Collection Section */
   
-  
 .carousel {
     width: 100%;
     margin: 1vh 0 6vh 0;
@@ -299,18 +298,18 @@ nav h3 {
 
 /* Subscribe Section */
 
+/* Text Area */
+
 .subscription {
     color: #fff;
     background: linear-gradient(#00000044, #00000044), url("../images/wave-bkgd.jpg") no-repeat bottom;
-    background-size: static, static;
+    background-size: static, cover;
     width: 100%;
     position: relative;
-    padding: 3rem 0;
-    text-shadow: 2px 2px 3px #2b2a2aec;
 }
 
 .subscription-content {
-    margin: 10% auto;
+    margin-bottom: 8px;
 }
 
 .subscription h2 {
@@ -319,6 +318,8 @@ nav h3 {
     font-weight: 300;
     font-style: Italic;
     text-align: center;
+    text-shadow: 2px 2px 3px #2b2a2aec;
+    padding-top: 2.5rem;
 }
 
 .subscription p {
@@ -330,14 +331,63 @@ nav h3 {
     font-size: 1rem;
     display: block;
     margin: 0 auto;
-    max-width: 50%;
+    line-height: 2;
 }
+
+/* Form Area */
 
 .sign-up {
     display: block;
-    margin: 2rem auto 0;
+    margin: 2rem auto 0 auto;
+    padding-bottom: 3rem;
     position: relative;
     text-align: center;
+}
+
+input {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0 auto;
+}
+
+input[type=email] {
+    border: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: .85rem 1.25rem;
+    /*padding-right: 110px;*/
+    width: 60%;
+    max-width: 200px;
+    display: inline-block;
+    
+}
+form div{
+   
+    background-color: white;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 3px;
+    width: 30%;
+    height: 100%;
+    margin: 0;
+    display: inline-block;
+    
+    max-width: 115px; 
+}
+
+input[type=button] {
+    color: #fff;
+    background-color: #e2574c;
+    position: relative;
+    border: none;
+    padding: .66rem 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 25px;
+    text-align: center;
+    max-width: 115px; 
+    width: 100%;
 }
 
 /* Footer */
