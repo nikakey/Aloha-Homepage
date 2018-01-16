@@ -195,9 +195,9 @@ nav h3 {
 
 .main-container {
     display: grid;
-    grid-column-gap: 8px;
-    grid-row-gap: 8px;
-    grid-template-columns: 50% 50%;
+    grid-column-gap: 2%;
+    grid-row-gap: 7px;
+    grid-template-columns: 49% 49%;
 }
 
 .grid-cell {
@@ -264,31 +264,6 @@ nav h3 {
 
 /*  Collection Section */
   
-.carousel {
-    width: 100%;
-    margin: 1vh 0 6vh 0;
-}
-  
-.carousel-cell {
-    min-width: 300px;
-    width: 25%;
-    height: auto;
-    margin-right: 30px;
-    text-align: center;
-    font-size: 1em;  
-    line-height: 1.0em;
-    border-radius: 5px;
-    counter-increment: carousel-cell;
-}
-
-.carousel-cell img {
-    width: 100%;
-}
-  
-.carousel-cell * {
-    margin-right: 0;
-}
-  
 .popular-products h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
@@ -299,6 +274,43 @@ nav h3 {
 
 .popular-products h3 {
     color: #e2574c;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.popular-products p {
+    text-transform: uppercase;
+    font-size: .65rem;
+    font-weight: 500;
+}
+
+p.price {
+    font-size: .75rem;
+    margin-bottom: 2rem;
+}
+
+.carousel-cell * {
+    margin-right: 0;
+}
+
+.carousel {
+    width: 100%;
+    margin: 1vh 0 6vh 0;
+}
+  
+.carousel-cell {
+    min-width: 300px;
+    width: 25%;
+    height: auto;
+    margin-right: 30px;
+    text-align: center; 
+    line-height: 2rem;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+}
+
+.carousel-cell img {
+    width: 100%;
 }
 
 /* Subscribe Section */
@@ -397,11 +409,13 @@ input[type=button] {
 /* Footer */
 
 footer {
-    display: flex;
-    align-items: center;
-    height: 30vh;
-    justify-content: space-between;
+    display: block;
+    text-align: center;
+    width: 100%;
     background-color: #242424;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    line-height: 1.25;
 }
 
 footer p, li {
@@ -413,11 +427,16 @@ footer li {
 }
 
 .contacts {
-    padding-left: 1.25rem;
+    margin-bottom: 1.5rem;
 }
 
-.social {
-    padding-right: 1.25rem;
+.social li {
+    display: inline-block;
+    padding-right: .5rem;
+}
+
+.social li:last-child {
+    padding-right: 0;
 }
 
 footer p {
@@ -425,7 +444,8 @@ footer p {
 }
 
 .networks {
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
+    display: none;
 }
 
 .style {
