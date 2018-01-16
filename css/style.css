@@ -218,7 +218,7 @@ nav h3 {
     display: grid;
     grid-column-gap: 8px;
     grid-row-gap: 8px;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 48.9% 48.9%;
     margin-right: 0;
     margin-left: 0;
 }
@@ -343,10 +343,12 @@ p.price {
     background-size: static, cover;
     width: 100%;
     position: relative;
+    margin-top: 4rem;
 }
 
 .subscription-content {
     margin-bottom: 8px;
+    padding: 0 .5rem 0 .5rem;
 }
 
 .subscription h2 {
@@ -393,27 +395,27 @@ input[type=email] {
     padding: .85rem 1.25rem;
     /*padding-right: 110px;*/
     width: 60%;
-    max-width: 200px;
+    max-width: 175px;
     display: inline-block;
     
 }
-form div{
-   
+.button-placer {
     background-color: #fff;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     padding: 3px;
     width: 30%;
-    height: 100%;
+    height: 30%;
     margin: 0;
     display: inline-block;
     max-width: 115px; 
+    position: relative;
+    left: -2px;
 }
 
 input[type=button] {
     color: #fff;
     background-color: #e2574c;
-    position: relative;
     border: none;
     padding: .66rem 1rem;
     text-decoration: none;
@@ -435,10 +437,6 @@ footer {
     padding-top: 3rem;
     padding-bottom: 4rem;
     line-height: 1.25;
-}
-
-footer p, li {
-    /* color: #fff; */
 }
 
 footer li {
