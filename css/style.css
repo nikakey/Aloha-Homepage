@@ -79,6 +79,29 @@ section {
     margin-top: 3rem;
 }
 
+a:hover,
+a:visited {
+    color: #b64036;
+}
+
+.head-section-style {
+    font-weight: 600;
+    font-style: normal;
+}
+
+.brand-color {
+    color: #969696;
+}
+
+.brand-color-light,
+.brand-color-light p {
+    color: #fff;
+}
+
+.second-brand-color {
+    color: #e2574c;
+}
+
 /* Header Section */
 
 header {
@@ -119,7 +142,6 @@ nav ul li {
 }
 
 nav h3 {
-    color: #e2574c;
     font-family: "Raleway";
     text-transform: uppercase;
     font-weight: 300;
@@ -142,7 +164,6 @@ nav h3 {
 
 .banner-text {
     text-align: center;
-    color: #fff;
     display: inline-block;
     justify-content: center;
     position: absolute;
@@ -195,9 +216,11 @@ nav h3 {
 
 .main-container {
     display: grid;
-    grid-column-gap: 2%;
-    grid-row-gap: 7px;
-    grid-template-columns: 49% 49%;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    grid-template-columns: 50% 50%;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .grid-cell {
@@ -227,7 +250,6 @@ nav h3 {
     font-weight: normal;
     font-size: 1.35rem;
     text-transform: uppercase;
-    color: #fff;
     text-shadow: 1px 1px 2px #2b2a2a88;
     line-height: 1;
 }
@@ -273,7 +295,6 @@ nav h3 {
 }
 
 .popular-products h3 {
-    color: #e2574c;
     font-size: 1.5rem;
     font-weight: 300;
 }
@@ -318,7 +339,6 @@ p.price {
 /* Text Area */
 
 .subscription {
-    color: #fff;
     background: linear-gradient(#00000044, #00000044), url("../images/wave-bkgd.jpg") no-repeat bottom;
     background-size: static, cover;
     width: 100%;
@@ -340,7 +360,6 @@ p.price {
 }
 
 .subscription p {
-    color: #fff;
     text-align: center;
     padding-top: 1rem;
     line-height: 1.25rem;
@@ -380,7 +399,7 @@ input[type=email] {
 }
 form div{
    
-    background-color: white;
+    background-color: #fff;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     padding: 3px;
@@ -419,7 +438,7 @@ footer {
 }
 
 footer p, li {
-    color: #fff;
+    /* color: #fff; */
 }
 
 footer li {
@@ -443,13 +462,12 @@ footer p {
     font-family: "Playfair Display";
 }
 
+footer a {
+    color: #fff;
+}
+
 .networks {
     /* margin-left: 1rem; */
     display: none;
-}
-
-.style {
-    font-weight: 600;
-    font-style: normal;
 }
 
