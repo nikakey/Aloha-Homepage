@@ -12,7 +12,7 @@ $(document).ready(function() {
     
     
     /* Smooth Scrolling */
-    
+ /*   
     // Select all links with hashes
 $('a[href*="#"]')
 // Remove links that don't actually link to anything
@@ -25,6 +25,7 @@ $('a[href*="#"]')
     && 
     location.hostname == this.hostname
   ) {
+    var headerHeight = $("header").height();
     // Figure out element to scroll to
     var target = $(this.hash);
     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -33,7 +34,7 @@ $('a[href*="#"]')
       // Only prevent default if animation is actually gonna happen
       event.preventDefault();
       $('html, body').animate({
-        scrollTop: target.offset().top
+        scrollTop: target.offset().top - headerHeight 
       }, 1000, function() {
         // Callback after animation
         // Must change focus!
@@ -49,4 +50,18 @@ $('a[href*="#"]')
     }
   }
 });
+});*/
+
+$('body').on('click','a[href^="#"]',function(event){
+  event.preventDefault();
+  //var target_offset = $(this.hash).offset() ? $(this.hash).offset().top : 0;
+  var target_offset = $(this.hash).offset() ? $(this.hash).offset().top : 0;
+  //change this number to create the additional off set        
+ 
+  var headerHeight = $(".head-element").height();
+  target_offset = target_offset < headerHeight ? headerHeight: target_offset;
+  
+  $('html, body').animate({scrollTop:target_offset - headerHeight}, 1000);
+});
+
 });
