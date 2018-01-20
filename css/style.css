@@ -66,7 +66,6 @@ h3 {
 }
 
 .wrapper {
-    min-width: 360px;
     width: 100%;
     height: auto;
 }
@@ -88,9 +87,24 @@ a:hover {
     color: #b64036;
 }
 
-.head-section-style {
+.head-section-style-main {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 300;
+    font-style: Italic;
+    text-align: center;
+}
+
+.head-section-style-bold {
     font-weight: 600;
     font-style: normal;
+}
+
+.ordinary-text {
+    font-size: 1rem;
+    padding-top: 1.5rem;
+    line-height: 2;
+    text-align: center;
 }
 
 .brand-color {
@@ -117,7 +131,7 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: .25rem;
     padding: .5rem;
     /* position: fixed;
     top: 0;
@@ -125,8 +139,8 @@ header {
 }
 
 .logo { 
-    min-width: 130px;
-    width: 30%;
+    min-width: 121px;
+    width: 25%;
 }
 
 .cart {
@@ -162,14 +176,13 @@ nav h3 {
 
 .banner {
     background: linear-gradient(#00000044, #00000044), url("../images/banner-girl.png") 
-    no-repeat center bottom, url("../images/flower-bkgd.jpg") repeat-x top;
-    background-size: cover, auto 90%, cover;
+    center 44px no-repeat, url("../images/flower-bkgd.jpg") repeat-x top;
+    background-size: cover, 155px, cover;
     height: 300px;
     width: 100%;
     position: relative;
     padding: 3rem 0;
-    margin-top: 0; 
-
+    margin-top: 0;
 }
 
 .banner-text {
@@ -201,25 +214,17 @@ nav h3 {
 /* About Section */
 
 .about {
-    /* margin: 1.25rem auto 0 auto; */
+    display: flex;
+    justify-content: center;
     padding-right: 1rem;
     padding-left: 1rem;
-    /* max-width: 100%; */
 }
 
-.about h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    font-weight: 300;
-    font-style: Italic;
-    text-align: center;
-}
-
-.about p {
-    font-size: 1rem;
-    padding-top: 1rem;
-    line-height: 2;
-    text-align: center;
+.about-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 700px;
 }
 
 /* Categories Section */
@@ -311,14 +316,6 @@ nav h3 {
 }
 
 /*  Collection Section */
-  
-.popular-products h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    font-weight: 300;
-    font-style: Italic;
-    text-align: center;
-}
 
 .popular-products h3 {
     font-size: 1.5rem;
@@ -333,22 +330,18 @@ nav h3 {
 
 p.price {
     font-size: .85rem;
+    margin-top: .5rem;
     margin-bottom: 2rem;
-    margin-top: .25rem;
 }
 
 .carousel {
     width: 100%;
-    margin: 1vh 0 6vh 0;
-}
-
-.carousel-cell * {
-    margin-right: 0;
+    margin: 1vw 0 6vw 0;
 }
   
 .carousel-cell {
+    width: 100%;
     min-width: 300px;
-    width: 25%;
     height: auto;
     text-align: center; 
     line-height: 2rem;
@@ -358,6 +351,8 @@ p.price {
 
 .carousel-cell img {
     width: 100%;
+    max-width: 300px;
+    margin-top: 3rem;
 }
 
 /* Subscribe Section */
@@ -365,7 +360,7 @@ p.price {
 /* Text Area */
 
 .subscription {
-    background: linear-gradient(#00000044, #00000044), url("../images/wave-bkgd.jpg") no-repeat bottom;
+    background: linear-gradient(#6160603f, #6160603f), url("../images/wave-bkgd.jpg") no-repeat bottom;
     background-size: static, cover;
     width: 100%;
     position: relative;
@@ -375,26 +370,6 @@ p.price {
 .subscription-content {
     margin-bottom: 8px;
     padding: 0 .35rem 0 .35rem;
-}
-
-.subscription h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    font-weight: 300;
-    font-style: Italic;
-    text-align: center;
-    /* padding-top: 2.5rem; */
-}
-
-.subscription p {
-    text-align: center;
-    padding-top: 1rem;
-    line-height: 1.25rem;
-    text-align: center;
-    font-size: 1rem;
-    display: block;
-    margin: 0 auto;
-    line-height: 2;
 }
 
 /* Form Area */
@@ -449,6 +424,10 @@ input[type=submit] {
     text-align: center;
     max-width: 115px; 
     width: 100%;
+}
+
+input[type=submit]:hover {
+    background-color: #b64036;
 }
 
 /* Footer */
@@ -509,7 +488,7 @@ footer p {
 
 /* Media Queries */
 
-@media screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) {
     .wrapper {
         min-width: 600px;
     }
@@ -521,10 +500,18 @@ footer p {
     section {
         padding-top: 4rem;
     }
+
+    .head-section-style-main {
+        font-size: 2.5rem;
+    }
+
+    .ordinary-text {
+        font-size: 1.15rem;
+    }
     
     header {                
         flex-wrap: nowrap;
-        margin: 1.75rem auto 1rem auto;
+        margin: .5rem auto .5rem auto;
         padding-right: .75rem;
         padding-left: .75rem;
     }
@@ -548,7 +535,7 @@ footer p {
     }
 
     nav h3 {
-        font-size: .85rem;
+        font-size: .90rem;
     }
 
     .collection {
@@ -557,19 +544,6 @@ footer p {
 
     .season {
         font-size: 3rem;
-    }
-
-    .about {
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
-    }
-
-    .about h2 {
-        font-size: 2.25rem;
-    }
-
-    .about p {
-        font-size: 1.25rem;
     }
     
     .categories-of-products {
@@ -615,25 +589,34 @@ footer p {
         grid-row: 2;
     }
 
-    .popular-products h2 {
-        font-size: 2.25rem;
+    .popular-products h3 {
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+    
+    .popular-products p {
+        font-size: .75rem;
+    }
+    
+    p.price {
+        font-size: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    .carousel-cell {
+        width: 50%;
+    }
+
+    .carousel-cell img {
+        max-width: 240px;
     }
     
     .subscription {
-        margin-top: 5rem;
+        margin-top: 4.25rem;
     }
 
     .subscription-content {
         padding: 0 1.25rem 0 1.25rem;
-    }
-
-    .subscription h2 { 
-        font-size: 2.25rem;
-        /* padding-top: 4rem; */
-    }
-
-    .subscription p {
-        font-size: 1.25rem;
     }
 
     .sign-up {
@@ -664,7 +647,7 @@ footer p {
     }
     
     .social {
-        margin-right: 2rem;
+        margin-right: 3rem;
     }
     
     .social li {
@@ -683,6 +666,51 @@ footer p {
 
 }
 
-@media screen and (min-width: 1240px){
+@media only screen and (min-width: 1240px){
+    .wrapper {
+        min-width: 1240px;
+    }
     
+    .logo { 
+        max-width: 160px;
+        padding-left: 1rem;
+    }
+
+    .cart {
+        min-width: 60px;
+        padding-right: 1rem;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    nav ul li {
+        padding: 0 1rem 0 1rem;
+    }
+    
+    nav h3 {
+        font-size: 1rem;
+    }
+
+    .banner {
+        background-size: cover, 260px, contain;
+        height: 460px;
+    }
+
+    .season {
+        font-size: 4rem;
+    }
+
+    .categories-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .carousel-cell {
+        width: 25%;
+    }
+
+    .social {
+        margin-right: 5.5rem;
+    }
 }
