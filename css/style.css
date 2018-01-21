@@ -22,6 +22,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -48,7 +49,7 @@ table {
 
 /* Customization */
 
-/* General */
+/* General Rules */
 
 body {
     font-family: 'Raleway', sans-serif;
@@ -362,7 +363,7 @@ p.price {
     margin-top: 3rem;
 }
 
-/* Subscribe Section */
+/* Subscription Section */
 
 /* Text Area */
 
@@ -372,67 +373,76 @@ p.price {
     width: 100%;
     position: relative;
     margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 8px;
 }
 
-.subscription-content {
-    margin-bottom: 8px;
-    padding: 0 .35rem 0 .35rem;
+.subscription-content-text {
+    padding: 0 1rem 0 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 /* Form Area */
 
+.subscription-form {
+    border-radius: 25px;
+    border: none;
+    padding-top: .25rem;
+    padding-bottom: .15rem;
+    margin: 2rem auto 4rem auto;
+    background: #fff;
+}
+  
 .sign-up {
-    display: block;
-    margin: 2rem auto 0 auto;
-    padding-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
     position: relative;
     text-align: center;
 }
-
+  
 input {
     font-family: inherit;
     font-size: 100%;
     margin: 0 auto;
 }
-
-input[type=email] {
-    border: none;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-    padding: .85rem 1.25rem;
-    width: 60%;
-    max-width: 175px;
-    display: inline-block;
-    
+  
+.input-placer {
+    padding: .5rem;
 }
+  
+input[type=email] {
+    width: 90%;
+    margin-right: 5rem;
+    margin-left: .5rem;
+      
+}
+
 .button-placer {
     background-color: #fff;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-    padding: 3px;
-    width: 30%;
-    height: 30%;
-    margin: 0;
-    display: inline-block;
-    max-width: 115px; 
-    position: relative;
-    left: -2px;
+    margin-right: .25rem;
 }
-
+  
 input[type=submit] {
     color: #fff;
     background-color: #e2574c;
     border: none;
-    padding: .66rem 1rem;
+    padding: .65rem 1rem;
     text-decoration: none;
     font-weight: 500;
     cursor: pointer;
     border-radius: 25px;
     text-align: center;
-    max-width: 115px; 
     width: 100%;
 }
-
+  
 input[type=submit]:hover {
     background-color: #b64036;
 }
@@ -627,16 +637,8 @@ footer p {
         margin-top: 4.25rem;
     }
 
-    .subscription-content {
-        padding: 0 1.25rem 0 1.25rem;
-    }
-
-    .sign-up {
-        padding-bottom: 4.25rem;
-    }
-
     input[type=email] {
-        max-width: 220px;
+        margin-right: 6rem;
     }
 
     footer {
@@ -720,6 +722,10 @@ footer p {
 
     .carousel-cell {
         width: 25%;
+    }
+
+    input[type=email] {
+        margin-right: 6.5rem;
     }
 
     .social {
