@@ -146,6 +146,7 @@ header {
     z-index: 1;
     width: 100%;
     padding-bottom: .75rem;
+    box-shadow: 1px 1px 2px #c7c6c6;
 }
 
 .logo { 
