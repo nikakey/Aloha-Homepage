@@ -163,6 +163,24 @@ header {
     padding: .5rem 0 .5rem 0;
 }
 
+.count {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #e2574c;
+    display: block;
+    border: none;
+    z-index: 2;
+    position: absolute;
+    top: 11px;
+    right: 7px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: .75rem;
+    display: none;
+}
+
 nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -393,7 +411,7 @@ nav h3 {
 p.price {
     font-size: .85rem;
     margin-top: .5rem;
-    margin-bottom: 2rem;
+    margin-bottom: .75rem;
 }
 
 .carousel {
@@ -415,6 +433,25 @@ p.price {
     width: 100%;
     max-width: 300px;
     margin-top: 3rem;
+}
+
+.add-to-cart-button {
+    color: #fff;
+    background-color: #242424;
+    border: none;
+    padding: .35rem .25rem;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: .75rem;
+    cursor: pointer;
+    border-radius: 25px;
+    text-align: center;
+    width: 90px;
+    margin-bottom: 3rem;
+}
+
+.add-to-cart-button:hover {
+    background-color: #0f87a2;
 }
 
 /* Subscription Section */
@@ -624,6 +661,11 @@ footer p {
         padding-right: .75rem;
     }
 
+    .count {
+        top: 12px;
+        right: 10px;
+    }
+
     nav {
         -webkit-box-ordinal-group: 3;
             -ms-flex-order: 2;
@@ -702,7 +744,6 @@ footer p {
     
     p.price {
         font-size: 1rem;
-        margin-bottom: 4rem;
     }
 
     .carousel-cell {
@@ -779,6 +820,14 @@ footer p {
     .cart {
         min-width: 60px;
         padding-right: 1rem;
+    }
+
+    .count {
+        width: 25px;
+        height: 25px;
+        top: 13px;
+        right: 11px;
+        font-size: 1.15rem;
     }
 
     nav {

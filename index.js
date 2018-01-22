@@ -48,4 +48,14 @@ $(document).ready(function() {
     }
   }
 
+  /* Cart Update */
+
+  var totalItems = 0;
+
+  $('body').on('click', '.add-to-cart-button', function() {
+    $('.count').css('display', 'block'),
+    totalItems++
+    $('.count').text(totalItems);
+  });
+
 });
