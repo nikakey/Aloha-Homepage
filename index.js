@@ -7,9 +7,9 @@ $(document).ready(function() {
     cellAlign: 'left',
     contain: true,
     prevNextButtons: false,
+    freeScroll: true,
     wrapAround: true,
-    autoPlay: 3000,
-    pauseAutoPlayOnHover: true
+    autoPlay: true
   }); 
     
     /* Smooth Scrolling */
