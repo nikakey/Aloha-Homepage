@@ -3,7 +3,7 @@
 This is a one-page website of an online shop, created using HTML5, CSS3, and JQuery. I used the mobile-first approach and then optimized the website for 2 more screen sizes: 600px and 1240px. 
 
 ## Key points of HTML (things used and personal learnings):
-* Used html mark-up to structure the webpage (e.g. <section>, <div>, <nav>, <header>, <footer>, etc.)
+* Used html mark-up to structure the webpage (e.g. '<section>', '<div>', '<nav>', '<header>', '<footer>', etc.)
 * Used <script>, <link> 
 
 ## Key points of CSS:
