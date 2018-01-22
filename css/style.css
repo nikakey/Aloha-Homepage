@@ -301,6 +301,14 @@ nav h3 {
             transform: translate(-50%, -50%);
 }
 
+.categories-text a {
+    color: #fff;
+}
+
+.categories-text a:hover {
+    color: #f5ebc6;
+}
+
 .categories-text h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: normal;
