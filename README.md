@@ -14,3 +14,4 @@ This is a one-page website of an online shop, created using HTML5, CSS3, and JQu
 * Added an image slider (Flickity Carousel)
 * Installed an email address validation into the subscription form
 * Added smooth scrolling for the navigation menu
+* Implemented an interactive cart filling
