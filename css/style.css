@@ -420,7 +420,7 @@ input[type=email] {
     width: 90%;
     margin-right: 5rem;
     margin-left: .5rem;
-      
+    border: none;
 }
 
 .button-placer {
