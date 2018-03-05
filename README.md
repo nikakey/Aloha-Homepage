@@ -2,6 +2,8 @@
 
 This is a one-page website of an online shop, created using HTML5, CSS3, and JQuery. I used the mobile-first approach and then optimized the website for 2 more screen sizes: 600px and 1240px. 
 
+![alt text](/images/for-readme/screenshot-alohapage.png "Screen shot of the project")
+
 ## Key points of HTML (things used and personal learnings):
 * Used html mark-up to structure the webpage (e.g. tags section, div, nav, header, footer, etc.)
 * Used tags script, link
