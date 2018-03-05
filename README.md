@@ -17,3 +17,5 @@ This is a one-page website of an online shop, created using HTML5, CSS3, and JQu
 * Installed an email address validation into the subscription form
 * Added smooth scrolling for the navigation menu
 * Implemented an interactive cart filling
+
+![alt text](/images/for-readme/aloha-gif.gif "A gif of the interactive cart filling")
