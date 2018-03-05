@@ -16,9 +16,7 @@ $(document).ready(function() {
 
   $('body').on('click','a[href^="#"]',function(event){
     event.preventDefault();
-    //var target_offset = $(this.hash).offset() ? $(this.hash).offset().top : 0;
-    var target_offset = $(this.hash).offset() ? $(this.hash).offset().top : 0;
-    //change this number to create the additional off set        
+    var target_offset = $(this.hash).offset() ? $(this.hash).offset().top : 0;       
   
     var headerHeight = $(".head-element").height();
     target_offset = target_offset < headerHeight ? headerHeight: target_offset;
