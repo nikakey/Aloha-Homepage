@@ -1,4 +1,4 @@
-# Project 1: Aloha Aloha Apparel Co. Homepage
+# Project 1: Aloha Apparel Co. Homepage
 
 This is a one-page website of an online shop, created using HTML5, CSS3, and JQuery. I used the mobile-first approach and then optimized the website for 2 more screen sizes: 600px and 1240px. 
 
